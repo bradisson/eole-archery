@@ -1,7 +1,12 @@
+import nuxtConfig from './nuxt.config';
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage />
+      <NavBar />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+      <Footer />
     </NuxtLayout>
   </div>
 </template>

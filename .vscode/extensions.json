@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "nuxtr.nuxtr-vscode",
+    "esbenp.prettier-vscode",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

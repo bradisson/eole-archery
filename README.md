@@ -1,3 +1,8 @@
+# Sources
+
+- Logo `https://looka.com/editor/168112360`
+- Design ? `https://github.com/Gr33nW33n/nuxtship-template`
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
