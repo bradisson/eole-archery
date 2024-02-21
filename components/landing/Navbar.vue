@@ -1,16 +1,20 @@
 <script setup>
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
+    title: "Accueil",
+    path: "/",
   },
   {
-    title: "Pricing",
-    path: "/pricing",
+    title: "Les arcs",
+    path: "/arcs",
   },
   {
-    title: "About",
-    path: "/about",
+    title: "L'atelier",
+    path: "/atelier",
+  },
+  {
+    title: "A propos",
+    path: "/info",
   },
   {
     title: "Contact",
@@ -19,16 +23,20 @@ const menuitems = [
 ];
 
 const open = ref(false);
+
+const route = useRoute()
+console.log(route.path)
 </script>
 
 <template>
   <LandingContainer>
-    <header class="flex flex-col lg:flex-row justify-between items-center my-5">
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
+    <header class="flex items-center justify-center my-5 ">
+      <div class="flex-1 flex justify-around  ">
+        <a href="/" class="text-lg">
+          <!-- TODO : Mettre le bon logo. -->
+          <img src="/Logo.png" alt="logo" class="flex w-28">
         </a>
+        
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
             <svg
@@ -53,33 +61,29 @@ const open = ref(false);
           </button>
         </div>
       </div>
+      <!-- <h1 class="flex-3 text-3xl  flex justify-center">Eole Archery</h1> -->
+      <a href="/" class="text-lg">
+          <!-- TODO : Mettre le bon titre. -->
+          <img src="/title.png" alt="logo" class="flex w-56">
+        </a>
       <nav
-        class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
-        :class="{ block: open, hidden: !open }"
+        class="content-center flex-2  flex "
+        :class="{ hidden: open }"
       >
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          <li v-for="item of menuitems">
+        <ul class="flex gap-3 justify-around  flex-1">
+          <li v-for="item of menuitems" class="flex  ">
             <a
               :href="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+              class="w-fit text-gray-800 hover:text-gray-950 hover:bg-slate-300 active:bg-slate-600"
+              :class="[route.path === item.path && 'bg-slate-400']"
             >
               {{ item.title }}
             </a>
           </li>
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
         </div>
       </nav>
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
-      </div>
     </header>
   </LandingContainer>
 </template>
