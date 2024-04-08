@@ -1,3 +1,83 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnType": false, // required
+  "editor.formatOnPaste": true, // optional
+  "editor.formatOnSave": true, // optional
+  "editor.bracketPairColorization.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "editor.tabSize": 2,
+  // Files
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+  },
+  // Eslint
+  "eslint.format.enable": true,
+  // TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative", // set to "non-relative" for projects using aliases
+  // Todo tree
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.general.statusBar": "tags",
+  "todo-tree.general.tags": ["TODO", "FIX", "REVIEW"],
+  "todo-tree.general.tagGroups": {
+    "FIX": ["FIXME", "FIXIT", "FIX"]
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "checklist",
+      "type": "tag",
+      "background": "#ffff00",
+      "foreground": "#FF8C00",
+      "iconColour": "#ffff00"
+    },
+    "FIX": {
+      "icon": "alert",
+      "type": "line",
+      "background": "#9C171F",
+      "foreground": "#ffffff",
+      "iconColour": "#9C171F"
+    },
+    "REVIEW": {
+      "icon": "git-pull-request",
+      "foreground": "#9b7e09",
+      "background": "#f5dede",
+      "type": "tag"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "italic",
+    "type": "tag",
+    "background": "#3498DB",
+    "iconColour": "#3498DB",
+    "foreground": "#ffffff",
+    "opacity": 100
+  },
+  "prettier.bracketSpacing": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html",
+  },
+  "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+
+  "editor.fontLigatures": true,
 }

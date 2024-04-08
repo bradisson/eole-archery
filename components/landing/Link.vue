@@ -1,29 +1,29 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 interface Props {
-  href: string;
-  size?: "md" | "lg";
-  block?: boolean;
-  styleName?: "outline" | "primary" | "inverted" | "muted";
-  className?: string;
-  [x: string]: any;
+  href: string
+  size?: 'md' | 'lg'
+  block?: boolean
+  styleName?: 'outline' | 'primary' | 'inverted' | 'muted'
+  className?: string
+  [x: string]: any
 }
 
 withDefaults(defineProps<Props>(), {
-  size: "lg",
-  styleName: "primary",
-});
+  size: 'lg',
+  styleName: 'primary',
+})
 
 const sizes = {
-  lg: "px-5 py-2.5",
-  md: "px-4 py-2",
-};
+  lg: 'px-5 py-2.5',
+  md: 'px-4 py-2',
+}
 
 const styles = {
-  outline: "bg-white border-2 border-black hover:bg-gray-100 text-black",
-  primary: "bg-black text-white hover:bg-gray-800  border-2 border-transparent",
-  inverted: "bg-white text-black border-2 border-transparent",
-  muted: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
-};
+  outline: 'bg-white border-2 border-black hover:bg-gray-100 text-black',
+  primary: 'bg-black text-white hover:bg-gray-800  border-2 border-transparent',
+  inverted: 'bg-white text-black border-2 border-transparent',
+  muted: 'bg-gray-100 hover:bg-gray-200 border-2 border-transparent',
+}
 </script>
 
 <template>
@@ -34,7 +34,7 @@ const styles = {
       block && 'w-full',
       sizes[size],
       styles[styleName],
-    ]"
-    ><slot />
+    ]">
+    <slot />
   </NuxtLink>
 </template>

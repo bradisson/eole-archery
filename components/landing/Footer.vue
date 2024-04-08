@@ -8,13 +8,12 @@
       Please keep this backlink on your website if possible.
     -->
     <p class="text-center text-xs text-slate-500 mt-1">
-      Made by Bruno Radisson with 
+      Made by Bruno Radisson with
       <a
         href="https://github.com/Gr33nW33n"
         target="_blank"
         rel="noopener"
-        class="hover:underline"
-      >
+        class="hover:underline">
         Gr33nW33n
       </a>
       nuxtShip design template

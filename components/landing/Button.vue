@@ -1,27 +1,26 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 interface Props {
-  size?: "md" | "lg";
-  block?: boolean;
-  styleName?: "outline" | "primary" | "inverted";
-  className?: string;
-  [x: string]: any;
+  size: string
+  block?: boolean
+  styleName?: 'outline' | 'primary' | 'inverted'
+  className?: string
 }
 
 withDefaults(defineProps<Props>(), {
-  size: "md",
-  styleName: "primary",
-});
+  size: 'md',
+  styleName: 'primary',
+})
 
-const sizes = {
-  md: "px-5 py-2.5",
-  lg: "px-6 py-3",
-};
+const sizes: { [size: string]: string } = {
+  md: 'px-5 py-2.5',
+  lg: 'px-6 py-3',
+}
 
-const styles = {
-  outline: "border-2 border-black hover:bg-black text-black hover:text-white",
+const styles: { [style: string]: string } = {
+  outline: 'border-2 border-black hover:bg-black text-black hover:text-white',
   primary:
-    "bg-black text-white hover:bg-slate-900  border-2 border-transparent",
-};
+    'bg-black text-white hover:bg-slate-900  border-2 border-transparent',
+}
 </script>
 
 <template>
@@ -32,8 +31,7 @@ const styles = {
       sizes[size],
       styles[styleName],
       className,
-    ]"
-  >
+    ]">
     <slot />
   </button>
 </template>

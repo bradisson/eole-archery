@@ -1,37 +1,37 @@
-<script setup>
+<script lang="ts" setup>
 const features = [
   {
-    title: "Bois noble",
+    title: 'Bois noble',
     description:
-      "Fort d'un inventaire de plus x essences d'arbre, chaque arc est unique.",
-    icon: "game-icons:wood-beam",
+      'Fort d\'un inventaire de plus x essences d\'arbre, chaque arc est unique.',
+    icon: 'game-icons:wood-beam',
   },
   {
-    title: "",
-    description: "",
-    icon: "bx:bxs-window-alt",
+    title: '',
+    description: '',
+    icon: 'bx:bxs-window-alt',
   },
   {
-    title: "",
-    description: "",
-    icon: "bx:bxs-data",
+    title: '',
+    description: '',
+    icon: 'bx:bxs-data',
   },
   {
-    title: "",
-    description: "",
-    icon: "bx:bxs-bot",
+    title: '',
+    description: '',
+    icon: 'bx:bxs-bot',
   },
   {
-    title: "",
-    description: "",
-    icon: "bx:bxs-file-find",
+    title: '',
+    description: '',
+    icon: 'bx:bxs-file-find',
   },
   {
-    title: "",
-    description: "",
-    icon: "bx:bxs-user",
+    title: '',
+    description: '',
+    icon: 'bx:bxs-user',
   },
-];
+]
 </script>
 
 <template>
@@ -46,12 +46,18 @@ const features = [
   </div>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-    <div v-for="item of features" class="flex gap-4 items-start">
+    <div
+      v-for="item of features"
+      class="flex gap-4 items-start">
       <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon" />
+        <Icon
+          class="text-white"
+          :name="item.icon" />
       </div>
       <div>
-        <h3 class="font-semibold text-lg">{{ item.title }}</h3>
+        <h3 class="font-semibold text-lg">
+          {{ item.title }}
+        </h3>
         <p class="text-slate-500 mt-2 leading-relaxed">
           {{ item.description }}
         </p>

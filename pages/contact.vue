@@ -1,14 +1,18 @@
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  layout: "landing",
-});
+  layout: 'landing',
+})
 </script>
 
 <template>
   <LandingContainer>
     <LandingSectionhead>
-      <template v-slot:title>Contact</template>
-      <template v-slot:desc>I am here to help.</template>
+      <template #title>
+        Contact
+      </template>
+      <template #desc>
+        I am here to help.
+      </template>
     </LandingSectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
@@ -22,14 +26,16 @@ definePageMeta({
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+            <Icon
+              class="text-gray-400 w-4 h-4"
+              name="uil:map-marker" />
             <span>1010 Vienna, Austria</span>
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:jakobaichmayr@gmail.com"
-              >jakobaichmayr@gmail.com</a
-            >
+            <Icon
+              class="text-gray-400 w-4 h-4"
+              name="uil:envelope" /><a
+                href="mailto:jakobaichmayr@gmail.com">jakobaichmayr@gmail.com</a>
           </div>
           <!-- <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a

@@ -1,14 +1,14 @@
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  layout: "landing",
-});
+  layout: 'landing',
+})
 </script>
 
 <template>
   <LandingContainer>
-    <LandingHero></LandingHero>
-    <LandingFeatures></LandingFeatures>
+    <LandingHero />
+    <LandingFeatures />
     <!-- <LandingLogos></LandingLogos> -->
-    <LandingCta></LandingCta>
+    <LandingCta />
   </LandingContainer>
 </template>

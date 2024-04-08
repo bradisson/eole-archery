@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "gitlab.gitlab-workflow",
+    "antfu.goto-alias",
+    "antfu.iconify",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.npm-intellisense",
+    "nuxtr.nuxt-vscode-extentions",
+    "nuxtr.nuxtr-vscode",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "bradlc.vscode-tailwindcss",
+    "gruntfuggly.todo-tree",
+    "vue.volar"
+  ]
+}
