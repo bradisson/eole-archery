@@ -1,35 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import * as path from 'path'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
-    'nuxt-primevue',
     'nuxt-icon',
     '@pinia/nuxt',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@nuxt/ui',
   ],
   eslint: {
     config: {
       stylistic: {
         jsx: true,
       },
-    },
-  },
-  primevue: {
-    usePrimeVue: true,
-    options: {
-      unstyled: false,
-      ripple: true,
-    },
-    cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
-    components: {
-      include: '*',
-      exclude: ['Galleria', 'Carousel', 'Chart', 'Editor'],
-    },
-    directives: {
-      include: ['Ripple', 'Tooltip'],
     },
   },
   css: [

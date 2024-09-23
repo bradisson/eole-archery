@@ -8,10 +8,8 @@ export default {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
     './app.vue',
-    './node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
-
   },
   plugins: [],
 }
