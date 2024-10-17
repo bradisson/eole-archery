@@ -2,7 +2,7 @@
   [
     {
       "label": "Les poignées",
-      "to": "/fabrication/poignée",
+      "to": "/fabrication/poignee",
       "images": {
         "src": "https://placehold.co/600x400?text=placeholder",
         "alt": "image de poignées d'arc"
@@ -37,7 +37,7 @@
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra rhoncus arcu vitae venenatis. Suspendisse ligula enim, ultrices nec sollicitudin vel, bibendum eget ipsum. Etiam venenatis condimentum mauris ac euismod. Sed arcu magna, porttitor sed molestie quis, varius ac purus. In facilisis viverra eros, a hendrerit diam efficitur sed. Fusce id lorem ultrices, lobortis diam at, lobortis neque. Praesent et consectetur lectus, ac pretium purus. Quisque gravida nisi et ante cursus tincidunt. Nunc lacus lorem, feugiat quis lectus in, efficitur pulvinar sem. Aliquam nunc augue, dictum id ex eget, auctor efficitur leo. Nam vel turpis sollicitudin neque congue dignissim eget eu libero. Pellentesque dignissim augue quis dui efficitur, sit amet maximus nibh scelerisque."
     },
     {
-      "label": "L\"usinage",
+      "label": "L'usinage",
       "to": "/fabrication/usinage",
       "images": {
         "src": "https://placehold.co/600x400?text=placeholder",
@@ -47,7 +47,7 @@
     },
     {
       "label": "Les poupées",
-      "to": "/fabrication/poupée",
+      "to": "/fabrication/poupee",
       "images": {
         "src": "https://placehold.co/600x400?text=placeholder",
         "alt": "image de poignées d'arc"
