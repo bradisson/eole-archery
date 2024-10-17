@@ -1,11 +1,11 @@
 <template>
   <LandingContainer>
-    <main class="border-emerald-400 border flex flex-row">
-      <section class="border-teal-700 border basis-1/3">
-        <BowDetailsCarousel
+    <main class="flex flex-row">
+      <section class="basis-1/3 border-r border-gray-200 dark:border-gray-800 pt-2">
+        <BowCarousel
           :data="data" />
       </section>
-      <section class="border-red-400 border basis-2/3">
+      <section class="basis-2/3 border-b border-gray-200 dark:border-gray-800 pt-2">
         details
       </section>
     </main>
@@ -16,7 +16,7 @@
 definePageMeta({
   layout: 'landing',
 })
-const { data } = useAsyncData('bowData', () => queryContent(useRoute().params.id as string).findOne())
+const { data } = await useAsyncData('bowData', () => queryContent(useRoute().params.id as string).findOne())
 </script>
 
 <style>

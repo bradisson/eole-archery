@@ -1,0 +1,111 @@
+[
+  [
+    {
+      "label": "Americain",
+      "to": "/arcs/americain",
+      "features": [
+        {
+          "label": "livres",
+          "min": 65,
+          "max": 69
+        },
+        {
+          "label": "pouces",
+          "min": 25,
+          "max": 50
+        }
+      ],
+      "priceRange": {
+        "min": 600,
+        "max": 800
+      },
+      "takedown": false
+    },
+    {
+      "label": "Reflex Deflex",
+      "to": "/arcs/reflex_deflex",
+      "features": [
+        {
+          "label": "livres",
+          "min": 65,
+          "max": 69
+        },
+        {
+          "label": "pouces",
+          "min": 25,
+          "max": 50
+        }
+      ],
+      "priceRange": {
+        "min": 600,
+        "max": 800
+      },
+      "takedown": true
+    },
+    {
+      "label": "Hybride",
+      "to": "/arcs/hybride",
+      "features": [
+        {
+          "label": "livres",
+          "min": 65,
+          "max": 69
+        },
+        {
+          "label": "pouces",
+          "min": 25,
+          "max": 50
+        }
+      ],
+      "priceRange": {
+        "min": 600,
+        "max": 800
+      },
+      "takedown": true
+    }
+  ],
+  [
+    {
+      "label": "Semi Recurve",
+      "to": "/arcs/semi_recurve",
+      "features": [
+        {
+          "label": "livres",
+          "min": 65,
+          "max": 69
+        },
+        {
+          "label": "pouces",
+          "min": 25,
+          "max": 50
+        }
+      ],
+      "priceRange": {
+        "min": 600,
+        "max": 800
+      },
+      "takedown": true
+    },
+    {
+      "label": "Recurve",
+      "to": "/arcs/recurve",
+      "features": [
+        {
+          "label": "livres",
+          "min": 65,
+          "max": 69
+        },
+        {
+          "label": "pouces",
+          "min": 25,
+          "max": 50
+        }
+      ],
+      "priceRange": {
+        "min": 600,
+        "max": 800
+      },
+      "takedown": false
+    }
+  ]
+]

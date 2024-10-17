@@ -1,36 +1,29 @@
 <template>
-  <div>
-    COUCOU
-    <p>{{ $route.params._category }}</p>
-  </div>
+  <LandingContainer>
+    <LandingSectionhead>
+      <template #title>
+        Les {{ cat }}s
+      </template>
+    </LandingSectionhead>
+
+    <div class="grid md:grid-cols-3 gap-2 mx-auto max-w-screen-lg mt-12">
+      <BowCard
+        v-for="(item, index) of bowList.data.value"
+        :key="item._path"
+        :index="index"
+        :bow="item" />
+    </div>
+  </LandingContainer>
 </template>
 
 <script lang="ts" setup>
-const images = [{
-  itemImageSrc: '/arcs/1/1.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}, {
-  itemImageSrc: '/arcs/1/2.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}, {
-  itemImageSrc: '/arcs/1/3.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}, {
-  itemImageSrc: '/arcs/1/4.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}, {
-  itemImageSrc: '/arcs/1/5.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}, {
-  itemImageSrc: '/arcs/1/6.jpg',
-  alt: 'Description for Image 1',
-  title: 'Title 1',
-}]
+definePageMeta({
+  layout: 'landing',
+})
+const cat = useRoute().params.category
+
+const bowList = await useAsyncData('bowCategories', () => queryContent(`/arcs/${cat}`).find())
+console.log(bowList.data)
 </script>
 
 <style>

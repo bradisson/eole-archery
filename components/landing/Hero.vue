@@ -3,7 +3,7 @@
     <div class="p-24 md:order-1 hidden md:block">
       <img
         class="rounded-full transition-transform transform hover:scale-125"
-        src="~/assets/img/hero.jpg"
+        src="https://placehold.co/600x400?text=placeholder"
         alt="Starship starts the engine"
         loading="eager"
         format="avif"
@@ -13,7 +13,7 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Fabrication d'arcs traditionnel
+        Eole Archery
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
         Facture d'arc traditionnel par Yvan PINET.<wbr> Eole Archery propose des arcs traditionnel de qualité.
@@ -21,6 +21,7 @@
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
           href="/arcs"
+          style-name="outline"
           rel="noopener">
           Les Arcs
         </LandingLink>
@@ -28,8 +29,8 @@
           size="lg"
           style-name="outline"
           rel="noopener"
-          href="atelier">
-          L'atelier
+          href="/fabrication">
+          La Fabrication
         </LandingLink>
       </div>
     </div>
