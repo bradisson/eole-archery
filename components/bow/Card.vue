@@ -3,7 +3,7 @@ defineProps(['bow', 'index'])
 </script>
 
 <template>
-  <nuxt-link :to="`/bows/${bow.id}`">
+  <nuxt-link :to="`/arcs/${bow.id}`">
     <UCard class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
       <!-- Header avec image de l'arc -->
       <template #header>
